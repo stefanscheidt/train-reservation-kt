@@ -1,6 +1,5 @@
 package katas.trainreservation.domain
 
-
 data class Seat(
     val coach: String,
     val seatNumber: Int

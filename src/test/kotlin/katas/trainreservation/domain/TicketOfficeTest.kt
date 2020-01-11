@@ -8,5 +8,4 @@ class TicketOfficeTest {
     fun `make reservation`() {
         TODO("not implemented")
     }
-
 }

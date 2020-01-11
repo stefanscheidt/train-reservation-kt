@@ -1,12 +1,14 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-	id("org.springframework.boot") version "2.2.2.RELEASE"
+    id("org.springframework.boot") version "2.2.2.RELEASE"
     id("io.spring.dependency-management") version "1.0.8.RELEASE"
     kotlin("jvm") version "1.3.61"
     kotlin("plugin.spring") version "1.3.61"
 
     id("org.unbroken-dome.test-sets") version "2.2.1"
+    id("org.jlleitschuh.gradle.ktlint") version "9.1.1"
+    id("org.jlleitschuh.gradle.ktlint-idea") version "9.1.1"
 }
 
 group = "katas"
