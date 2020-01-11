@@ -40,14 +40,12 @@ val testIntImplementation: Configuration by configurations.getting {
     extendsFrom(configurations.implementation.get())
 }
 
-tasks.named("test") {
-    dependsOn(tasks.named("ktlintCheck"))
-}
-tasks.named("testInt") {
-    dependsOn(tasks.named("test"))
-}
 tasks.named("check") {
-    dependsOn(tasks.named("testInt"))
+    dependsOn(
+        tasks.named("ktlintCheck"),
+        tasks.named("test"),
+        tasks.named("testInt")
+    )
 }
 
 dependencies {
