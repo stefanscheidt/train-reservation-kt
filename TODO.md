@@ -3,7 +3,7 @@
 - [x] Add readme
 - [x] Init git and push to GitHub
 - [x] Copy code from upstream repo
-- [ ] Setup integration-test source set
+- [x] Setup integration-test source set
 - [ ] Setup [ktlint](https://ktlint.github.io/) and `.editorconfig`
 - [ ] Setup initial acceptance test
 - [ ] Setup test for HTTP client
