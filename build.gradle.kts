@@ -63,11 +63,13 @@ dependencies {
 
     testImplementation("org.junit.jupiter:junit-jupiter")
 
-    testImplementation("org.mockito:mockito-junit-jupiter")
+    testImplementation("io.mockk:mockk:1.9.3")
     testImplementation("org.assertj:assertj-core")
 
     testIntImplementation("org.springframework.boot:spring-boot-starter-test") {
-        exclude(group = "org.junit.vintage", module = "junit-vintage-engine")
+        exclude(group = "org.junit.vintage")
+        exclude(group = "org.mockito")
     }
+    testIntImplementation("com.ninja-squad:springmockk:2.0.0")
     testIntImplementation(sourceSets.test.get().output)
 }
