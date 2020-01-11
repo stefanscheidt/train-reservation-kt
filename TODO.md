@@ -5,5 +5,5 @@
 - [x] Copy code from upstream repo
 - [x] Setup integration-test source set
 - [x] Setup [ktlint](https://ktlint.github.io/)
-- [ ] Setup initial acceptance test
-- [ ] Setup test for HTTP client
+- [x] Setup initial acceptance test
+- [x] Setup test for HTTP client
