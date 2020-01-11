@@ -38,6 +38,13 @@ val testIntImplementation: Configuration by configurations.getting {
     extendsFrom(configurations.implementation.get())
 }
 
+tasks.named("testInt") {
+    dependsOn(tasks.named("test"))
+}
+tasks.named("check") {
+    dependsOn(tasks.named("testInt"))
+}
+
 dependencies {
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
