@@ -1,6 +1,6 @@
 package katas.trainreservation.adapter
 
-import katas.trainreservation.domain.BookingId
+import katas.trainreservation.domain.BookingReference
 import katas.trainreservation.domain.BookingReferencePort
 import org.springframework.stereotype.Component
 import org.springframework.web.client.RestTemplate
@@ -10,7 +10,7 @@ class BookingReferenceAdapter(
     val restTemplate: RestTemplate
 ) : BookingReferencePort {
 
-    override fun getBookingReference(): BookingId {
+    override fun getBookingReference(): BookingReference {
         TODO("not implemented")
     }
 }
