@@ -2,5 +2,5 @@ package katas.trainreservation.domain
 
 interface BookingReferencePort {
 
-    fun getBookingReference(): String
+    fun getBookingReference(): BookingId
 }
