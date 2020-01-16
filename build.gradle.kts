@@ -55,10 +55,7 @@ dependencies {
 
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
     implementation("io.github.microutils:kotlin-logging:1.7.8")
-    implementation("org.springframework.boot:spring-boot-starter-jdbc")
     implementation("org.springframework.boot:spring-boot-starter-web")
-
-    runtimeOnly("com.h2database:h2")
 
     testImplementation("org.junit.jupiter:junit-jupiter")
 
