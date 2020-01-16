@@ -14,7 +14,6 @@ class TrainReservationEndToEndTest(
 
     @Test
     fun `make reservation`() {
-        TODO()
         // https://docs.spring.io/spring/docs/5.2.2.RELEASE/spring-framework-reference/testing.html#spring-mvc-test-server
     }
 }

@@ -12,7 +12,6 @@ class BookingReferenceAdapterIntTest {
 
     @Test
     fun `get booking reference`() {
-        TODO()
         // https://docs.spring.io/spring/docs/5.2.2.RELEASE/spring-framework-reference/testing.html#spring-mvc-test-client
     }
 }

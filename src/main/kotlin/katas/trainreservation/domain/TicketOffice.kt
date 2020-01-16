@@ -11,7 +11,12 @@ class TicketOffice(
         return Reservation(
             trainId = reservationRequest.trainId,
             bookingReference = bookingReference,
-            seats = trainData?.seats?.keys?.toList() ?: emptyList()
+            seats = trainData
+                ?.seats
+                ?.keys
+                ?.toList()
+                ?.take(reservationRequest.seatCount)
+                ?: emptyList()
         )
     }
 }

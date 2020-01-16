@@ -24,8 +24,9 @@ class ReservationRequestProcessorTest {
         val trainData = TrainData(
             trainId,
             mapOf(
-                Seat.of("A", 1) to null,
-                Seat.of("A", 2) to null
+                seatOf("A", 1) to null,
+                seatOf("A", 2) to null,
+                seatOf("A", 3) to null
             )
         )
         every { trainDataService.getTrainData(trainId) } returns trainData
@@ -35,8 +36,8 @@ class ReservationRequestProcessorTest {
             trainId = trainId,
             bookingReference = expectedBookingId,
             seats = listOf(
-                Seat.of("A", 1),
-                Seat.of("A", 2)
+                seatOf("A", 1),
+                seatOf("A", 2)
             )
         )
 
